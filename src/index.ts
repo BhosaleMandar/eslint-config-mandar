@@ -12,5 +12,7 @@ import noEmojiInString from "./rules/no-emoji-in-string";
 export = {
 	rules: {
 		"no-emoji-in-string": noEmojiInString,
+		tabWidth: 4,
 	},
+	extends: ["plugin:prettier/recommended", "eslint:recommended"],
 };

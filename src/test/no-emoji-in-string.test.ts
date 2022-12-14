@@ -11,10 +11,13 @@ const ruleTester = new RuleTester({
 });
 
 ruleTester.run("Testing no-emoji-in-string rule", noEmojiInString, {
-	valid: [{ code: "const x = 'hello2'" }, { code: "const y='ppp'" }],
+	valid: [
+		{ code: "const fizz = 'hello'" },
+		{ code: "const buzz='a spaced string with number - 21212'" },
+	],
 	invalid: [
 		{
-			code: "const test ='hello1 😊'",
+			code: "const emojiString ='hello - 🤔'",
 			errors: [{ messageId: "emojiInStringNotAllowed" }],
 		},
 	],
