@@ -6,7 +6,14 @@
 // console.log(con.setConfig("v", "12"));
 // console.log(con.getConfig("v"));
 // console.log("Hello World");
-//"hello 😊".match(/\p{Emoji}/u)
+
+//TODO:
+// pre commit hook not running
+// add prettier to hook
+// add angular rules, check for angular eslint plugin
+// build and compile
+// how to import this library in other project
+
 import noEmojiInString from "./rules/no-emoji-in-string";
 
 export = {
