@@ -3,12 +3,12 @@ import { Rule } from "eslint";
 const rule: Rule.RuleModule = {
 	meta: {
 		messages: {
-			emojiInStringNotAllowed: "Please Do not use Emojis in string",
-		},
+			emojiInStringNotAllowed: "Please Do not use Emojis in string"
+		}
 	},
-	create: (context) => {
+	create: context => {
 		return {
-			VariableDeclaration: (node) => {
+			VariableDeclaration: node => {
 				if (node.declarations[0].init.type === "Literal") {
 					const value = node.declarations[0].init.value.match(
 						/\p{Extended_Pictographic}/gu
@@ -16,13 +16,13 @@ const rule: Rule.RuleModule = {
 					if (Array.isArray(value) && value.length > 0) {
 						context.report({
 							node,
-							messageId: "emojiInStringNotAllowed",
+							messageId: "emojiInStringNotAllowed"
 						});
 					}
 				}
-			},
+			}
 		};
-	},
+	}
 };
 
 export default rule;

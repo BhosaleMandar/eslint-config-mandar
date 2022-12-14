@@ -1,67 +1,68 @@
 {
-  "name": "eslint-config-mandar",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
-  "scripts": {
-    "test:rules": "mocha --require ./node_modules/ts-node/register --recursive './src/test/*.test.ts'",
-    "testj": "jest",
-    "husky": "husky install",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BhosaleMandar/eslint-config-mandar.git"
-  },
-  "keywords": [
-    "eslint",
-    "config",
-    "shareable",
-    "eslint",
-    "config",
-    "formatter"
-  ],
-  "author": "Mandar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BhosaleMandar/eslint-config-mandar/issues"
-  },
-  "homepage": "https://github.com/BhosaleMandar/eslint-config-mandar#readme",
-  "devDependencies": {
-    "@types/mocha": "^10.0.1",
-    "@types/node": "^18.11.15",
-    "eslint": "^8.29.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "husky": "^8.0.2",
-    "jest": "^29.3.1",
-    "mocha": "^10.2.0",
-    "prettier": "^2.8.1",
-    "ts-jest": "^29.0.3",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "nconf": "^0.12.0"
-  },
-  "jest": {
-    "globals": {
-      "ts-jest": {
-        "diagnostics": false
-      }
-    },
-    "testRegex": "(src/.*\\.test)\\.ts$",
-    "transform": {
-      "^.+\\.ts$": "ts-jest"
-    },
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "\\.d\\.ts$",
-      "lib/.*"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "ts",
-      "json"
-    ]
-  }
+	"name": "eslint-config-mandar",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"test:rules": "mocha --require ./node_modules/ts-node/register --recursive './src/test/*.test.ts'",
+		"testj": "jest",
+		"husky": "husky install",
+		"prettier": "prettier --write \"**/*.{js,ts}\"",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BhosaleMandar/eslint-config-mandar.git"
+	},
+	"keywords": [
+		"eslint",
+		"config",
+		"shareable",
+		"eslint",
+		"config",
+		"formatter"
+	],
+	"author": "Mandar",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/BhosaleMandar/eslint-config-mandar/issues"
+	},
+	"homepage": "https://github.com/BhosaleMandar/eslint-config-mandar#readme",
+	"devDependencies": {
+		"@types/mocha": "^10.0.1",
+		"@types/node": "^18.11.15",
+		"eslint": "^8.29.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"husky": "^8.0.2",
+		"jest": "^29.3.1",
+		"mocha": "^10.2.0",
+		"prettier": "^2.8.1",
+		"ts-jest": "^29.0.3",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.9.4"
+	},
+	"dependencies": {
+		"nconf": "^0.12.0"
+	},
+	"jest": {
+		"globals": {
+			"ts-jest": {
+				"diagnostics": false
+			}
+		},
+		"testRegex": "(src/.*\\.test)\\.ts$",
+		"transform": {
+			"^.+\\.ts$": "ts-jest"
+		},
+		"testPathIgnorePatterns": [
+			"/node_modules/",
+			"\\.d\\.ts$",
+			"lib/.*"
+		],
+		"moduleFileExtensions": [
+			"js",
+			"ts",
+			"json"
+		]
+	}
 }

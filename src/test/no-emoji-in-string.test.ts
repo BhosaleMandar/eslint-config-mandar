@@ -6,19 +6,19 @@ const ruleTester = new RuleTester({
 		ecmaVersion: 2022,
 		souceType: "module",
 		node: true,
-		browser: true,
-	},
+		browser: true
+	}
 });
 
 ruleTester.run("Testing no-emoji-in-string rule", noEmojiInString, {
 	valid: [
 		{ code: "const fizz = 'hello'" },
-		{ code: "const buzz='a spaced string with number - 21212'" },
+		{ code: "const buzz='a spaced string with number - 21212'" }
 	],
 	invalid: [
 		{
 			code: "const emojiString ='hello - 🤔'",
-			errors: [{ messageId: "emojiInStringNotAllowed" }],
-		},
-	],
+			errors: [{ messageId: "emojiInStringNotAllowed" }]
+		}
+	]
 });

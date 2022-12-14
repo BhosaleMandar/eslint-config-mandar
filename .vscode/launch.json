@@ -30,8 +30,7 @@
 			],
 			"sourceMaps": true,
 			"internalConsoleOptions": "neverOpen",
-			"env": {
-			}
+			"env": {}
 		}
 	]
 }
