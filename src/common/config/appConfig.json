@@ -1,0 +1,6 @@
+{
+    "name":"Typescript Project",
+    "db":{
+        "host":"localhost"
+    }
+}

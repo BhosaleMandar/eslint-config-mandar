@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-mandar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "husky": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhosaleMandar/eslint-config-mandar.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "shareable",
+    "eslint",
+    "config",
+    "formatter"
+  ],
+  "author": "Mandar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BhosaleMandar/eslint-config-mandar/issues"
+  },
+  "homepage": "https://github.com/BhosaleMandar/eslint-config-mandar#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.15",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "nconf": "^0.12.0"
+  }
+}
